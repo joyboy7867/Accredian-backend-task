@@ -75,7 +75,7 @@ app.post('/api/first', async (req, res) => {
                 };
             
                 const result = await transport.sendMail(mailOptions);
-                return result;
+                
               } catch (error) {
                 console.error('Error sending email:', error);
               }
